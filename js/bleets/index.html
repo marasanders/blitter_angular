@@ -5,5 +5,5 @@
 <div data-ng-repeat="bleet in BleetIndexViewModel.bleets">
   <a data-ui-sref="bleetShow({id: bleet.id})">{{bleet.content}}</a>
   <button type = "button" ><a data-ui-sref="bleetEdit({id: bleet.id})">    Edit</a></button>
-  <button type = "button" data-ng-click="BleetIndexViewModel.destroy()">Delete</button>
+  <button type = "button" data-ng-click="BleetIndexViewModel.destroy(bleet.id)">  Delete</button>
 </div>
