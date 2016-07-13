@@ -12,5 +12,5 @@
   function BleetIndexControllerFunction(BleetFactory){
     this.bleets = BleetFactory.query();
   }
-  
+
 }());
