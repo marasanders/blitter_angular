@@ -1,9 +1,11 @@
 <h2> Edit Bleet</h2>
 <form>
-  <input value="BleetEditViewModel.bleet.content" data-ng-model="BleetEditViewModel.bleet.content" />
+  <textarea value="BleetEditViewModel.bleet.content" data-ng-model="BleetEditViewModel.bleet.content" ></textarea>
   <input value="BleetEditViewModel.bleet.likes" data-ng-model="BleetEditViewModel.bleet.likes" />
-  <input value="BleetEditViewModel.bleet.created_at" data-ng-model="BleetEditViewModel.bleet.created_at" />
-  <textarea value="BleetEditViewModel.bleet.updated_at" data-ng-model="BleetEditViewModel.bleet.updated_at"></textarea>
+  <p><dfn>Created:</dfn> {{BleetEditViewModel.bleet.created_at}}</p>
+  <p><dfn>Updated:</dfn> {{BleetEditViewModel.bleet.updated_at}}</p>
+  <!-- <input value="BleetEditViewModel.bleet.created_at" data-ng-model="BleetEditViewModel.bleet.created_at" />
+  <textarea value="BleetEditViewModel.bleet.updated_at" data-ng-model="BleetEditViewModel.bleet.updated_at"></textarea> -->
   <button type = "button" data-ng-click="BleetEditViewModel.update()">Update</button>
   <button type = "button" data-ng-click="BleetEditViewModel.destroy()">Delete</button>
 </form>

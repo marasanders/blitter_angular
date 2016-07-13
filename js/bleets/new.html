@@ -2,9 +2,7 @@
 <form>
   <textarea placeholder= "Content" data-ng-model="BleetNewViewModel.bleet.content" /></textarea>
   <input placeholder= "Likes" data-ng-model="BleetNewViewModel.bleet.likes" />
-  <input placeholder= "Created On" data-ng-model="BleetNewViewModel.bleet.created_at" />
-
-   <!-- <input placeholder= "Created On" data-ng-model=({{Date.now() | date:'dd.MM.yyyy HH:mm:ss'}}) /> -->
-  <input placeholder= "Updated On" data-ng-model="BleetNewViewModel.bleet.updated_at">
+  <!-- <input placeholder= "Created On" data-ng-model="BleetNewViewModel.bleet.created_at" />
+  <input placeholder= "Updated On" data-ng-model="BleetNewViewModel.bleet.updated_at"> -->
   <button type = "button" data-ng-click="BleetNewViewModel.create()">Create</button>
 </form>
